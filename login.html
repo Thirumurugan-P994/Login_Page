@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" href="https://tse1.mm.bing.net/th/id/OIP.GzJYFJqtTfN6e1yL31E-_wHaHa?pid=Api&P=0&h=180">
+
+        <style>
+            * {
+                margin: 0;
+                border: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+            }
+
+            body {
+                text-align: center;
+                background-image: url(https://images.unsplash.com/photo-1596677894337-34745d22a9d0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                animation: moveBackground 3s ease-in-out infinite;
+            }
+
+        @keyframes moveBackground {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 200% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+
+            .log {
+                font-size: x-large;
+                padding: 80px;
+            }
+
+            .headd {
+                font-size: 90px;
+                text-align: center;
+                color: aqua;
+            }
+
+            .main-login {
+                width: 100%;
+                max-width: 400px;
+                margin: auto;
+                padding: 20px;
+                background: rgba(232, 104, 219, 0.1);
+                border-radius: 10px;
+            }
+
+            .email {
+                padding: 15px;
+            }
+
+            .input-box {
+                width: 100%;
+                height: 50px;       
+                font-size: 18px;      
+                padding: 30px;       
+                border: 2px solid #ccc;
+                border-radius: 8px;
+            }
+
+            .submt button {
+                width: 100%;
+                height: 50px;
+                font-size: 18px;
+                cursor: pointer;
+                background-color: aqua;
+                border-radius: 8px;
+                border: none;
+            }
+
+            .submt button:hover {
+                background-color: #00cccc;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="headd"><b><i>Welcome to our website</i></b></p>
+        <div class="log">
+            <h1>Login</h1>
+        </div>
+        <form class="main-login">
+            <div class="email">
+                <input type="email"  class="input-box" placeholder="Enter email" required><br><br>
+            </div>
+            <div class="email">
+                <input type="password"  class="input-box" placeholder="Enter password" maxlength="16" minlength="8" required ><br><br>
+
+
+            </div>
+            <div class="submt">
+                <button type="submit" >Submit</button><br><br>
+            </div>
+            <div>
+                <p>Don't have an account?</p>
+                <a href="#">Create Account</a>
+            </div>
+        </form>
+    </body>
+</html>
